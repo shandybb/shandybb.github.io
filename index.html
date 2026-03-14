@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Celebrating Baby's Arrival - Andy &amp; Shannon</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EP5ZQT1P70"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EP5ZQT1P70');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset & base ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blush:       #f5d6d6;
+      --blush-mid:   #ebb8b8;
+      --blush-deep:  #d4878d;
+      --sage:        #a8b89a;
+      --sage-light:  #d6e3cf;
+      --cream:       #fdf8f3;
+      --warm-white:  #fffaf6;
+      --charcoal:    #3d3535;
+      --muted:       #7a6b6b;
+      --accent:      #c86b6b;
+      --gold:        #c8a882;
+
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans:  'Lato', sans-serif;
+
+      --section-gap: 5rem;
+      --radius:      1.25rem;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--cream);
+      color: var(--charcoal);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    /* ── Reusable ─────────────────────────────────────────── */
+    .section-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-label {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--blush-deep);
+      margin-bottom: 0.6rem;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.3;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1.5rem auto;
+      max-width: 220px;
+    }
+    .divider span { flex: 1; height: 1px; background: var(--blush-mid); }
+    .divider svg  { flex-shrink: 0; }
+
+    /* ── Buttons ──────────────────────────────────────────── */
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2.2rem;
+      border-radius: 3rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+      cursor: pointer;
+    }
+    .btn:hover  { transform: translateY(-2px); opacity: 0.92; }
+    .btn:active { transform: translateY(0);    opacity: 1;    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 4px 18px rgba(200,107,107,0.35);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+    }
+    .btn-map {
+      background: var(--sage);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(168,184,154,0.4);
+      font-size: 0.8rem;
+      padding: 0.65rem 1.6rem;
+    }
+
+    /* ── Petal decorations ────────────────────────────────── */
+    .petals-top, .petals-bottom {
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+    .petals-top    { top: 0; }
+    .petals-bottom { bottom: 0; transform: rotate(180deg); }
+
+    /* ── ① HERO ───────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5rem 1.5rem 4rem;
+      background: linear-gradient(160deg, #fce8e8 0%, #fdf4ef 45%, #eef3eb 100%);
+      overflow: hidden;
+    }
+
+    /* Corner blossom clusters */
+    #hero::before, #hero::after {
+      content: '';
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      background-image:
+        radial-gradient(circle at 30% 30%, rgba(245,214,214,0.7) 0%, transparent 55%),
+        radial-gradient(circle at 70% 20%, rgba(235,184,184,0.5) 0%, transparent 45%),
+        radial-gradient(circle at 50% 70%, rgba(214,227,207,0.5) 0%, transparent 50%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    #hero::before { top: -80px; left: -80px; }
+    #hero::after  { bottom: -80px; right: -80px; }
+
+    /* Photo frame */
+    .hero-photo-wrap {
+      position: relative;
+      width: 160px;
+      height: 160px;
+      margin-bottom: 2rem;
+    }
+    .hero-photo-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      border: 2px solid var(--blush-mid);
+    }
+    .hero-photo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: linear-gradient(135deg, var(--blush) 0%, var(--sage-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      overflow: hidden;
+    }
+    /* Placeholder shown when no real image */
+    .hero-photo img {
+      width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+    }
+    .hero-photo-placeholder {
+      font-size: 3.5rem;
+      line-height: 1;
+      user-select: none;
+    }
+
+    .hero-eyebrow {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--blush-deep);
+      margin-bottom: 0.8rem;
+    }
+
+    #hero h1 {
+      font-size: clamp(2.4rem, 6vw, 3.8rem);
+      color: var(--charcoal);
+      margin-bottom: 0.4rem;
+    }
+    #hero h1 em {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--muted);
+      max-width: 540px;
+      margin: 0.8rem auto 2rem;
+    }
+
+    .hero-due {
+      display: inline-block;
+      background: var(--warm-white);
+      border: 1px solid var(--blush-mid);
+      border-radius: 2rem;
+      padding: 0.45rem 1.4rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 2.2rem;
+    }
+
+    /* Floating petals SVG layer */
+    .petal-float {
+      position: absolute;
+      opacity: 0.55;
+      pointer-events: none;
+      animation: drift 8s ease-in-out infinite alternate;
+    }
+    @keyframes drift {
+      from { transform: translateY(0px)  rotate(0deg); }
+      to   { transform: translateY(14px) rotate(8deg); }
+    }
+    .petal-float:nth-child(odd) { animation-direction: alternate-reverse; }
+
+    /* ── ② PARENTS MESSAGE ────────────────────────────────── */
+    #message {
+      padding: var(--section-gap) 0;
+      background: var(--warm-white);
+      text-align: center;
+    }
+    #message h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-bottom: 1rem; }
+    #message p  { color: var(--muted); max-width: 580px; margin: 0 auto; }
+
+    /* Couple photo strip */
+    .photo-strip {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .photo-card {
+      width: 140px;
+      height: 180px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 6px 24px rgba(61,53,53,0.12);
+      background: linear-gradient(145deg, var(--blush) 0%, var(--sage-light) 100%);
+      flex-shrink: 0;
+      position: relative;
+    }
+    .photo-card img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .photo-card .photo-label {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(61,53,53,0.45));
+      color: #fff;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.6rem 0.5rem 0.5rem;
+      text-align: center;
+    }
+    .photo-placeholder {
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--blush-deep);
+      opacity: 0.6;
+    }
+
+    /* ── ③ EVENT DETAILS ──────────────────────────────────── */
+    #event {
+      padding: var(--section-gap) 0;
+      background: linear-gradient(170deg, #f9f0ee 0%, #eef4eb 100%);
+      text-align: center;
+    }
+    #event h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-bottom: 0.5rem; }
+
+    .event-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 32px rgba(61,53,53,0.1);
+      padding: 2.5rem 2rem;
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    .event-divider-v {
+      background: var(--blush-mid);
+      min-height: 80px;
+      align-self: center;
+    }
+    .event-block { text-align: center; }
+    .event-icon  {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .event-block h3 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blush-deep);
+      margin-bottom: 0.5rem;
+    }
+    .event-block p {
+      font-size: 1.05rem;
+      color: var(--charcoal);
+      line-height: 1.5;
+    }
+
+    .map-btn-wrap { margin-top: 2rem; }
+
+    @media (max-width: 520px) {
+      .event-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .event-divider-v { display: none; }
+    }
+
+
+    /* ── ⑤ MENU ────────────────────────────────────────────── */
+    #menu {
+      padding: var(--section-gap) 0;
+      background: var(--warm-white);
+      text-align: center;
+    }
+    #menu h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-bottom: 0.4rem; }
+    #menu > .section-inner > p {
+      color: var(--muted);
+      margin-bottom: 2.2rem;
+    }
+
+    .menu-venue {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--gold);
+      margin-bottom: 2rem;
+      display: block;
+    }
+
+    .menu-list {
+      list-style: none;
+      counter-reset: course;
+      text-align: left;
+      max-width: 640px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .menu-item {
+      counter-increment: course;
+      display: grid;
+      grid-template-columns: 2.2rem 1fr;
+      gap: 0 1rem;
+      align-items: start;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid var(--blush-mid);
+    }
+    .menu-item:last-child { border-bottom: none; }
+
+    .menu-num {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--blush-deep);
+      line-height: 1.4;
+      padding-top: 0.05rem;
+    }
+    .menu-num::before { content: counter(course) "."; }
+
+    .menu-text {}
+    .menu-en {
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--charcoal);
+      line-height: 1.4;
+    }
+    .menu-vi {
+      font-family: var(--font-sans);
+      font-weight: 300;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.15rem;
+      font-style: italic;
+    }
+
+    .menu-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 32px rgba(61,53,53,0.1);
+      padding: 2.5rem 2.5rem 2rem;
+      margin-top: 0;
+    }
+
+    @media (max-width: 520px) {
+      .menu-card { padding: 1.75rem 1.25rem 1.5rem; }
+    }
+
+    /* ── ⑥ REGISTRY ───────────────────────────────────────── */
+    #registry {
+      padding: var(--section-gap) 0;
+      background: linear-gradient(160deg, #fce8e8 0%, #fdf4ef 60%, #eef3eb 100%);
+      text-align: center;
+    }
+    #registry h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-bottom: 0.8rem; }
+    #registry p  { color: var(--muted); max-width: 500px; margin: 0 auto 2rem; }
+
+    .registry-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 32px rgba(61,53,53,0.1);
+      padding: 2.5rem 2rem;
+      margin-top: 0;
+      display: inline-block;
+      max-width: 620px;
+      width: 100%;
+    }
+    .registry-icon { font-size: 2.8rem; margin-bottom: 0.75rem; display: block; }
+    .registry-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
+    .registry-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+    .registry-btns .btn {
+      font-size: 0.75rem;
+      padding: 0.85rem 1.4rem;
+    }
+
+    .btn-diaper {
+      background: var(--sage);
+      color: #fff;
+      box-shadow: 0 4px 18px rgba(168,184,154,0.4);
+    }
+
+    /* ── Modal ─────────────────────────────────────────────── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(61,53,53,0.55);
+      backdrop-filter: blur(4px);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .modal-overlay.open { display: flex; }
+
+    .modal {
+      background: var(--cream);
+      border-radius: var(--radius);
+      box-shadow: 0 16px 48px rgba(61,53,53,0.2);
+      padding: 2.5rem 2rem 2rem;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      max-height: 90svh;
+      overflow-y: auto;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1.25rem;
+      background: none;
+      border: none;
+      font-size: 1.4rem;
+      color: var(--muted);
+      cursor: pointer;
+      line-height: 1;
+    }
+    .modal-close:hover { color: var(--accent); }
+
+    .modal h3 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+    .modal .modal-sub {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .qr-grid {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .qr-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .qr-item img {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      border-radius: 0.75rem;
+      border: 1px solid var(--blush-mid);
+      padding: 0.5rem;
+      background: #fff;
+    }
+
+    .qr-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .qr-label-paypal {
+      font-size: 1rem;
+      font-weight: 700;
+      font-style: italic;
+      letter-spacing: -0.01em;
+    }
+    .qr-label-paypal span:first-child { color: #003087; }
+    .qr-label-paypal span:last-child  { color: #009cde; }
+
+
+    /* ── Sticky nav bar (minimal) ─────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(253,248,243,0.88);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(235,184,184,0.3);
+      transition: box-shadow 0.2s;
+    }
+    nav.scrolled { box-shadow: 0 2px 16px rgba(61,53,53,0.1); }
+    .nav-brand {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--charcoal);
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.6rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    @media (max-width: 560px) {
+      .nav-links { display: none; }
+    }
+
+    /* ── Scroll reveal ────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ───────────────────────────────────────── -->
+  <nav id="nav">
+    <a href="#hero" class="nav-brand">&#10025;</a>
+    <ul class="nav-links">
+      <li><a href="#message">Our Story</a></li>
+      <li><a href="#event">Details</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#registry">Registry</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── ① Hero ────────────────────────────────────────────── -->
+  <section id="hero">
+
+    <!-- Floating blossom petals (decorative SVG) -->
+    <svg class="petal-float" style="top:8%;left:6%;width:48px;" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="30" cy="18" rx="10" ry="18" fill="#ebb8b8" opacity=".7" transform="rotate(0 30 30)"/>
+      <ellipse cx="30" cy="18" rx="10" ry="18" fill="#f5d6d6" opacity=".6" transform="rotate(72 30 30)"/>
+      <ellipse cx="30" cy="18" rx="10" ry="18" fill="#ebb8b8" opacity=".7" transform="rotate(144 30 30)"/>
+      <ellipse cx="30" cy="18" rx="10" ry="18" fill="#f5d6d6" opacity=".6" transform="rotate(216 30 30)"/>
+      <ellipse cx="30" cy="18" rx="10" ry="18" fill="#ebb8b8" opacity=".7" transform="rotate(288 30 30)"/>
+      <circle cx="30" cy="30" r="6" fill="#fff" opacity=".9"/>
+    </svg>
+
+    <svg class="petal-float" style="top:15%;right:8%;width:38px;animation-delay:-3s;" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="30" cy="18" rx="9" ry="16" fill="#d6e3cf" opacity=".7" transform="rotate(0 30 30)"/>
+      <ellipse cx="30" cy="18" rx="9" ry="16" fill="#a8b89a" opacity=".5" transform="rotate(72 30 30)"/>
+      <ellipse cx="30" cy="18" rx="9" ry="16" fill="#d6e3cf" opacity=".7" transform="rotate(144 30 30)"/>
+      <ellipse cx="30" cy="18" rx="9" ry="16" fill="#a8b89a" opacity=".5" transform="rotate(216 30 30)"/>
+      <ellipse cx="30" cy="18" rx="9" ry="16" fill="#d6e3cf" opacity=".7" transform="rotate(288 30 30)"/>
+      <circle cx="30" cy="30" r="5" fill="#fff" opacity=".9"/>
+    </svg>
+
+    <svg class="petal-float" style="bottom:18%;left:10%;width:32px;animation-delay:-5s;" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="30" cy="18" rx="8" ry="15" fill="#ebb8b8" opacity=".6" transform="rotate(0 30 30)"/>
+      <ellipse cx="30" cy="18" rx="8" ry="15" fill="#f5d6d6" opacity=".5" transform="rotate(90 30 30)"/>
+      <ellipse cx="30" cy="18" rx="8" ry="15" fill="#ebb8b8" opacity=".6" transform="rotate(180 30 30)"/>
+      <ellipse cx="30" cy="18" rx="8" ry="15" fill="#f5d6d6" opacity=".5" transform="rotate(270 30 30)"/>
+      <circle cx="30" cy="30" r="5" fill="#fff" opacity=".8"/>
+    </svg>
+
+    <svg class="petal-float" style="bottom:22%;right:12%;width:44px;animation-delay:-2s;" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="30" cy="18" rx="10" ry="17" fill="#d6e3cf" opacity=".65" transform="rotate(0 30 30)"/>
+      <ellipse cx="30" cy="18" rx="10" ry="17" fill="#a8b89a" opacity=".45" transform="rotate(72 30 30)"/>
+      <ellipse cx="30" cy="18" rx="10" ry="17" fill="#d6e3cf" opacity=".65" transform="rotate(144 30 30)"/>
+      <ellipse cx="30" cy="18" rx="10" ry="17" fill="#a8b89a" opacity=".45" transform="rotate(216 30 30)"/>
+      <ellipse cx="30" cy="18" rx="10" ry="17" fill="#d6e3cf" opacity=".65" transform="rotate(288 30 30)"/>
+      <circle cx="30" cy="30" r="6" fill="#fff" opacity=".9"/>
+    </svg>
+
+    <!-- Hero photo -->
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="assets/image1.jpg" alt="Andy and Shannon at Ventana Big Sur" style="object-position: center 65%;" />
+      </div>
+    </div>
+
+    <p class="hero-eyebrow">You're invited to gather with us</p>
+
+    <h1><em>Celebrating Baby's Arrival</em></h1>
+
+    <div class="divider" aria-hidden="true">
+      <span></span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2C9 2 6 5 6 8c0 5 6 12 6 12s6-7 6-12c0-3-3-6-6-6z" fill="#ebb8b8"/>
+        <circle cx="12" cy="8" r="2" fill="#fff"/>
+      </svg>
+      <span></span>
+    </div>
+
+    <div class="hero-due">Due: Late July 2026</div>
+
+    <a href="https://www.amazon.com/baby-reg/andy-lien-shannon-nguyen-july-2026-sanramon/KJDWO64S555F"
+       target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+      Click Here for Our Baby Registry
+    </a>
+
+  </section>
+
+  <!-- ── ② Message from the Parents ───────────────────────── -->
+  <section id="message">
+    <div class="section-inner">
+
+      <p class="section-label reveal">A Note from Andy &amp; Shannon</p>
+      <h2 class="reveal">With Full Hearts,<br>We Welcome You</h2>
+
+      <div class="divider reveal" aria-hidden="true">
+        <span></span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <ellipse cx="12" cy="8" rx="5" ry="8" fill="#d6e3cf"/>
+          <ellipse cx="12" cy="8" rx="5" ry="8" fill="#a8b89a" opacity=".5" transform="rotate(72 12 12)"/>
+          <ellipse cx="12" cy="8" rx="5" ry="8" fill="#d6e3cf" transform="rotate(144 12 12)"/>
+          <ellipse cx="12" cy="8" rx="5" ry="8" fill="#a8b89a" opacity=".5" transform="rotate(216 12 12)"/>
+          <ellipse cx="12" cy="8" rx="5" ry="8" fill="#d6e3cf" transform="rotate(288 12 12)"/>
+          <circle cx="12" cy="12" r="3" fill="#fff"/>
+        </svg>
+        <span></span>
+      </div>
+
+      <p class="reveal">
+        After a long and tender <a href="our-journey.html" style="color:var(--blush-deep);text-decoration:underline;text-underline-offset:3px;">journey</a> to get here, we feel incredibly grateful to be expecting our baby this July.
+        We would love for you to join us for a baby shower as we look forward to this new chapter.
+        Every step of the way, the love and support of our friends and family carried us forward in ways we will never forget.
+        We are overjoyed to gather with the people who matter most to us -thank you for being part of our story.
+      </p>
+
+      <!-- Photo strip -->
+      <div class="photo-strip reveal">
+        <div class="photo-card" style="width:180px;height:180px;border-radius:50%;">
+          <img src="assets/image2.jpg" alt="Baby ultrasound beneath cherry blossoms" style="object-position: center 45%;" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── ③ Event Details ───────────────────────────────────── -->
+  <section id="event">
+    <div class="section-inner">
+
+      <p class="section-label reveal">Save the Date</p>
+      <h2 class="reveal">Gather with Us</h2>
+
+      <div class="event-card reveal" style="grid-template-columns:1fr;max-width:480px;margin:2rem auto 0;">
+        <div class="event-block">
+          <span class="event-icon" aria-hidden="true">&#128140;</span>
+          <h3>Location &amp; Date</h3>
+          <p style="color:var(--muted);font-size:0.95rem;">
+            The baby shower will be held on <b>Sunday May 3rd, 2026</b>. Please refer to your invitation for the location and time.<br>
+            <span style="margin-top:0.4rem;display:inline-block;">To RSVP, please let Andy or Shannon know directly by April 3rd 2026.</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── ⑤ Menu ──────────────────────────────────────────── -->
+  <section id="menu">
+    <div class="section-inner">
+
+      <p class="section-label reveal">Deluxe Set Menu &mdash; Th&#7921;c &#272;&#417;n Cao C&#7845;p</p>
+      <h2 class="reveal">What We're Serving</h2>
+      <p class="reveal" style="color:var(--muted);margin-bottom:1rem;">
+      Sit back and enjoy a nine-course feast prepared for the occasion.</p>
+
+      <div class="menu-card reveal">
+        <ol class="menu-list">
+
+          <li class="menu-item">
+            <span class="menu-num" aria-hidden="true"></span>
+            <div class="menu-text">
+              <div class="menu-en">Roasted Pork Combination Platter</div>
+              <div class="menu-vi">Heo Quay Thập Cẩm Khai Vị</div>
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <span class="menu-num" aria-hidden="true"></span>
+            <div class="menu-text">
+              <div class="menu-en">Dried Scallop, Fish Maw &amp; Seafood Broth</div>
+              <div class="menu-vi">Súp Bong Bóng Cá, Biển Mai Khô &amp; Đồ Biển</div>
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <span class="menu-num" aria-hidden="true"></span>
+            <div class="menu-text">
+              <div class="menu-en">Saut&eacute;ed Prawns with Deep Fried Shrimp Ball</div>
+              <div class="menu-vi">Tôm Xào Cải &amp; Tôm Chiên Giòn</div>
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <span class="menu-num" aria-hidden="true"></span>
+            <div class="menu-text">
+              <div class="menu-en">Saut&eacute;ed Scallops &amp; Tender Beef in Honey Pepper Sauce</div>
+              <div class="menu-vi">Bò Xào Biển Mai và Sốt Mật Ong Tiêu</div>
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <span class="menu-num" aria-hidden="true"></span>
+            <div class="menu-text">
+              <div class="menu-en">Peking Duck</div>
+              <div class="menu-vi">Vịt Bắc Kinh</div>
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <span class="menu-num" aria-hidden="true"></span>
+            <div class="menu-text">
+              <div class="menu-en">Stir-Fried Lobster - Sampan Style</div>
+              <div class="menu-vi">Tôm Hùm Rang Tỏi Ớt</div>
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <span class="menu-num" aria-hidden="true"></span>
+            <div class="menu-text">
+              <div class="menu-en">Smoked Sea Bass</div>
+              <div class="menu-vi">Cá Tuyết Xông Khói</div>
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <span class="menu-num" aria-hidden="true"></span>
+            <div class="menu-text">
+              <div class="menu-en">Seafood Fried Rice</div>
+              <div class="menu-vi">Cơm Chiên Đồ Biển</div>
+            </div>
+          </li>
+
+          <li class="menu-item">
+            <span class="menu-num" aria-hidden="true"></span>
+            <div class="menu-text">
+              <div class="menu-en">Dim Sum Delight (Dessert)</div>
+              <div class="menu-vi">Bánh Ngọt</div>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+
+    </div>
+    <br/>
+     <p> *Please inform your server if you have dietary restrictions and they will do their best to accomodate.    </p>
+  </section>
+
+  <!-- ── ⑥ Registry ───────────────────────────────────────── -->
+  <section id="registry">
+    <div class="section-inner" style="text-align:center;">
+
+      <p class="section-label reveal">Baby Registry</p>
+      <h2 class="reveal">Help Us Prepare for Baby</h2>
+      <p class="reveal">
+        Hi friends and family - we&rsquo;re so excited to share this moment with you! Your support means so much as we prepare for baby&rsquo;s arrival.
+        We&rsquo;ve put together a registry below if you&rsquo;d like to take a look.
+      </p>
+
+      <div class="registry-card reveal">
+        <span class="registry-icon" aria-hidden="true">&#127873;</span>
+        <p style="font-family:var(--font-serif);font-size:1.2rem;color:var(--charcoal);margin-bottom:1.2rem;">
+          Andy Lien &amp; Shannon Nguyen<br>
+          <em style="font-size:0.95rem;color:var(--muted);">Baby Registry - July 2026</em>
+        </p>
+        <div class="registry-btns">
+          <a href="https://www.amazon.com/baby-reg/andy-lien-shannon-nguyen-july-2026-sanramon/KJDWO64S555F"
+             target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Baby Registry
+          </a>
+          <button class="btn btn-diaper" onclick="document.getElementById('diaperModal').classList.add('open')">
+            Diaper Fund
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── Diaper Fund Modal ────────────────────────────────── -->
+  <div class="modal-overlay" id="diaperModal" onclick="if(event.target===this)this.classList.remove('open')">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" onclick="document.getElementById('diaperModal').classList.remove('open')" aria-label="Close">&times;</button>
+      <h3 id="modalTitle">Diaper Fund</h3>
+      <p class="modal-sub">Scan any of the QR codes below to contribute. Thank you so much!</p>
+      <div class="qr-grid">
+        <div class="qr-item" style="overflow:hidden;border:1px solid var(--blush-mid);border-radius:0.75rem;width:140px;height:140px;background:#fff;flex-shrink:0;">
+          <img src="assets/IMG_3423.png" alt="Zelle QR code" style="width:100%;height:100%;transform:scale(1.05);transform-origin:center;border:none;padding:0;background:transparent;border-radius:0;" />
+        </div>
+        <div class="qr-item">
+          <img src="assets/image4.jpg" alt="Venmo QR code" style="transform:scale(1.12);transform-origin:center;" />
+        </div>
+        <div class="qr-item">
+          <div style="border:1px solid var(--blush-mid);border-radius:0.75rem;background:#fff;width:140px;height:140px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.2rem;">
+            <img src="assets/IMG_3424.png" alt="PayPal QR code" style="width:104px;height:104px;border:none;padding:0;background:transparent;border-radius:0;" />
+            <span class="qr-label-paypal"><span>Pay</span><span>Pal</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Scripts ───────────────────────────────────────────── -->
+  <script>
+    // Nav shadow on scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>
